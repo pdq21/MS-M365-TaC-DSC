@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: "actions/checkout@master"
       - name: "TODO-2-GH-Issue"
-        uses: "jamminroot/todo-2-gh-issue@master"
+        uses: "Jamminroot/todo-2-gh-issue@1.2.1"
         with:
           TOKEN: ${{ secrets.GHPROJECT_TOKEN_M365_TaC_DSC }}
           TODO_PATTERN: "(?<=?TODO[ :]).+" #\\/\\/ 

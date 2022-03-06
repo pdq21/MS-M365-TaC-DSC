@@ -2,8 +2,8 @@
 
 ## Goals
 
-Manage M365-Tenants with DevOps and GitOps principles and methods.
-To explore the given possibilities existing tools are used.
+Manage M365-Tenants with DevOps and GitOps principles and methods.  
+To explore the given possibilities existing tools provided by other developers are used.  
 
 ## Tech Choices
 
@@ -25,11 +25,12 @@ HOLD
 
 ## Custom Toolset
 
-### Custom Toolset Structure
+This collection is work-in-progress and displays some ideas.  
+The main purpose is to develop data structures to manage and document M365 state of objects.  
+In order to provide legible output for humans  
+Not all scripts are functional yet.
 
-This collection is work-in-progress and displays some ideas.
-The main purpose is to develop data structures to manage and document M365 state of objects. 
-Not all scripts are functional yet. 
+### Structure
 
 - `IAM` for groups and users, e.g. AAD and PIM
 - `MDM` for Intune devices, e.g. LOB-Software, Autopilot, Configration Profiles, Baselines
@@ -37,12 +38,12 @@ Not all scripts are functional yet.
 
 ## Microsoft M365 Desired State Configuration
 
-This projects offers Import, Export and Comparison of M365 configurations.
+This projects offers import, export and comparison of M365 configurations.  
 The configurations can be saved as JSON-like DSC-Objects and versioned by SCM/VCS. 
 
-[M365DSC Project Page](https://microsoft365dsc.com)
-[M365DSC on Github](https://github.com/microsoft/Microsoft365DSC)
-[Available Components](https://export.microsoft365dsc.com/)
+- [M365DSC Project Page](https://microsoft365dsc.com)
+- [M365DSC on Github](https://github.com/microsoft/Microsoft365DSC)
+- [Available Components](https://export.microsoft365dsc.com/)
 
 ### Structure
 
@@ -53,8 +54,11 @@ The configurations can be saved as JSON-like DSC-Objects and versioned by SCM/VC
 
 ## M365/Intune Docu
 
-[M365Documentation]( https://github.com/ThomasKur/M365Documentation)
-[Intune and AAD CA Documentation](https://github.com/ThomasKur/IntuneDocumentation)
+This project provides export of M365 as wall as Intune and CA settings.  
+The file types used are DOCX, CSV and JSON.
+
+- [M365Documentation]( https://github.com/ThomasKur/M365Documentation)
+- [Intune and AAD CA Documentation](https://github.com/ThomasKur/IntuneDocumentation)
 
 ### Structure
 
@@ -63,7 +67,7 @@ The configurations can be saved as JSON-like DSC-Objects and versioned by SCM/VC
 
 ## IntuneCD
 
-Uses Python3 and MS Graph for intented MacOS audiance.
+Uses Python3 and MS Graph for intented MacOS audiance.  
 May be a possibility to be used platform agnostic.
 
 - TODO
@@ -74,8 +78,8 @@ May be a possibility to be used platform agnostic.
 
 ## About Enterprise Apps
 
-- owners, users and groups can be assigned
-- built-in roles can be assigned
+- Owners, users and groups can be assigned
+- Built-in roles can be assigned
 
 ### Possibly needed Apps
 
@@ -85,21 +89,20 @@ May be a possibility to be used platform agnostic.
 
 ### Register Apps
 
-- some Modules offer app registration
-- otherwise manual registration may be neccessary
-
-![]()
+- Some modules offer built-in app registration
+- Otherwise manual registration may be neccessary
 
 ### Consent to Apps
 
-![Grant Consent](./src/EnterpriseApps_AdminConsent.PNG)
-![Assignment Required](./src/EnterpriseApps_AssignmentRequired.PNG)
-[Review permissions granted to applications](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/manage-application-permissions)
+- Grant admin consent and [Review permissions granted to applications](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/manage-application-permissions) 
+- Maybe require that users mus be assigned to apps and can not assign themselves
+<img src="./img/EnterpriseApps_AdminConsent.PNG" alt="Grant Consent" width=60% height=60%/>
+<img src="./img/EnterpriseApps_AssignmentRequired.PNG" alt="Assignment Required" width=60% height=60%/>
 
 ### App roles offered by AAD
 
-![App roles explanation](./src/EnterpriseApps_built-in_roles_explanation.PNG)
-![App built-in roles](./src/EnterpriseApps_built-in_roles.PNG)
+<img src="./img/EnterpriseApps_built-in_roles_explanation.PNG" alt="App Roles Explanation" width=60% height=60%/>
+<img src="./img/EnterpriseApps_built-in_roles.PNG" alt="App built-in Roles" width=60% height=60%/>
 
 ## About MS Graph
 
@@ -112,8 +115,8 @@ May be a possibility to be used platform agnostic.
   - 'The service principal object defines what the app can actually do in the specific tenant, who can access the app, and what resources the app can access.'
 [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals)
 
-![MS Graph Properties](./src/MSGraph_properties.PNG)
+<img src="./img/MSGraph_properties.PNG" alt="MS Graph Properties" width=25% height=25%/>
 
 ## Notes
 
-- Make sure SSPR is implemented properly, otherwise the credentials may not be passed properly and the PS login-form may pop up
+- Make sure SSPR is implemented properly otherwise the credentials may not be passed and the PS login-form may pop up

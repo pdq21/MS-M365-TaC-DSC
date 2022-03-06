@@ -14,7 +14,7 @@ jobs:
         uses: "Jamminroot/todo-2-gh-issue@1.2.1"
         with:
           TOKEN: ${{ secrets.GHPROJECT_TOKEN_M365_TaC_DSC }}
-          TODO_PATTERN: "(?<=(<#|#)* *TODO[ :]).+" #positive look-behind assertion
+          TODO_PATTERN: "(?<=(<#|#)+ *TODO[ :]).+" #positive look-behind assertion
           GH_LABEL: "TODO"
           TRIM: ",: \""
           TIMEOUT: 1000

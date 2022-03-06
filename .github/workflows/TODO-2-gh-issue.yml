@@ -14,7 +14,7 @@ jobs:
         uses: "jamminroot/todo-2-gh-issue@master"
         with:
           TOKEN: ${{ secrets.GHPROJECT_TOKEN_M365_TaC_DSC }}
-          TODO_PATTERN: "(?<=\\/\\/ ?TODO[ :]).+"
+          TODO_PATTERN: "(?<=?TODO[ :]).+" #\\/\\/ 
           GH_LABEL: "TODO"
           TRIM: ",: \""
           TIMEOUT: 1000

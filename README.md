@@ -11,17 +11,21 @@ Inspired by [Thoughworks Tech Radar](https://www.thoughtworks.com/radar).
 
 ADOPT
 - MS PS-Modules
-- M365DSC
+- [M365DSC](https://github.com/pdq21/M365-TaC-DSC#intunecd)
 
 TRIAL
-- IntuneCD with Python3 solely using MS Graph
-- WPNinjas using MS Graph
+- [IntuneCD](https://github.com/pdq21/M365-TaC-DSC#intunecd) with Python3 solely using MS Graph
+- [M365/Intune Docu](https://github.com/pdq21/M365-TaC-DSC#m365intune-docu) using MS Graph
 
 ASSESS
 - Using MS Graph to access M365 without PS-Modules
 
 HOLD
 - Manual undocumented changes
+- Undocumented manual changes
+- Undocumented changes
+- Manual changes
+- Undocumented changes with CLI
 
 ## Custom Toolset
 

@@ -1,0 +1,14 @@
+{
+	"Setup1.exe":  {
+		"GUID" : "{00000000-0000-0000-0000-000000000001}",
+		"detection":  "MSI",
+		"install":  "/s /v\"/qb /quiet /passive\"",
+		"uninstall":  "/qb /passive /quiet"
+	},
+	"Setup2.exe":  {
+		"GUID" : "{00000000-0000-0000-0000-000000000002}",
+		"detection" :  "MSI",
+		"install":  "/s /v\"/qb /quiet /passive\"",
+		"uninstall":  "/qb /passive /quiet"
+	}
+}
